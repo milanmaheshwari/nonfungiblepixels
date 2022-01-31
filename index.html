@@ -34,8 +34,10 @@
     <div id="herosection">
       <p id="heroheader">Make pixel art and mint as NFTs</p>
       <div id="heroctas">
-        <input id="email" type="email" placeholder="Enter email id (no spam I promise)">
-        <button id="notifyme">NOTIFY ME</button>
+        <form id="emailform" method="POST" action="https://script.google.com/macros/s/AKfycbzura5DK7jGNiy1EfHDlajO4r-lY_gHK0fWJlEEPVrjwIn_uS-yHcZEw3IgczYfMhA/exec">
+          <input name="Email" id="email" type="email" placeholder="Enter email id (no spam I promise)" required>
+          <button type="submit" id="notifyme">NOTIFY ME</button>
+        </form>
       </div>
     </div>
 
@@ -85,8 +87,11 @@
     <div id="footer">
       <p id="footerheader">Coming Soon</p>
       <div id="footerctas">
-        <input id="email2" type="email" placeholder="Enter email id (no spam I promise)">
-        <button id="notifyme2">NOTIFY ME</button>
+        <form id="emailform2" method="POST" action="https://script.google.com/macros/s/AKfycbzura5DK7jGNiy1EfHDlajO4r-lY_gHK0fWJlEEPVrjwIn_uS-yHcZEw3IgczYfMhA/exec">
+          <input name="Email" id="email2" type="email" placeholder="Enter email id (no spam I promise)" required>
+          <button type="submit" id="notifyme2">NOTIFY ME</button>
+        </form>
+       
       </div>
       <div id="icons">
         <a href="https://twitter.com/millons098?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @millons098</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -101,4 +106,7 @@
   </div>
 
   </body>
+
+  <script src="form.js"></script>
+
   </html>

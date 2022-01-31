@@ -111,6 +111,27 @@ body{
     box-shadow: 0 0 0 #1A171D;
     margin: 1.6vh 0 0 1.6vh;
   }
+  .loader {
+    border: 1vh solid #ffffff50;
+    border-radius: 50%;
+    border-top: 1vh solid #FFFFFF;
+    width: 2vh;
+    height: 2vh;
+    margin: 0 0 0 12vh;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
   
   #heropixelart{
     position: absolute;
