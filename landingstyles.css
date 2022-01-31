@@ -1,0 +1,336 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: url('bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: url('pointer.svg'),auto;
+  }
+  
+  #flexcontainer{
+    position: relative;
+    display: flex;
+    width: 160vh;
+    height: 60vh;
+    margin: auto;
+  }
+  
+  #logocontainer{
+    position: absolute;
+    left: 3vh;
+    top: 6vh;
+  }
+  #comingsoon{
+    position: absolute;
+    width: 14vh;
+    height: 4vh;
+    right: 3vh;
+    top: 6vh;
+    background: #1A171D;
+    color: #FFFFFF;
+    outline: none;
+    border-radius: 1vh;
+    font-family: 'Clash Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5vh;
+    letter-spacing: 0;
+    line-height: 4vh;
+    text-align: center;
+    cursor: url('pointer.svg'),auto;
+    margin: 0;
+  }
+
+  #herosection{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 20vh;
+  }
+  #heroheader{
+    font-family: 'Clash Display', sans-serif;
+    font-size: 10vh;
+    font-weight: 900;
+    color: #1A171D;
+    width: 100vh;
+    margin: 4vh auto 0;
+    text-align: center;
+  }
+  #heroctas{
+    position: relative;
+    width: 86vh;
+    height: 8vh;
+    margin: 8vh auto 0;
+    text-align: center;
+  }
+  #email{
+    position: absolute;
+    width: 48vh;
+    height: 8vh;
+    left: 0;
+    top: 0;
+    font-family: 'Clash Display', sans-serif;
+    font-size: 2.5vh;
+    font-weight: 600;
+    padding-left: 2vh;
+    color: #1A171D;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border: 0.4vh solid;
+    border-color: #1A171D;
+    border-radius: 2vh;
+    outline: none;
+    box-shadow: 1.6vh 1.6vh 0 #1A171D;
+  }
+  #email::placeholder{
+    color: #1A171D33;
+    font-weight: 500;
+  }
+  #notifyme{
+    position: absolute;
+    width: 32vh;
+    height: 8vh;
+    left: 52vh;
+    top: 0;
+    background: linear-gradient(90deg, #2638ff 0%, #ff3848 100%);
+    color: #FFFFFF;
+    border: 0.5vh solid #1A171D;
+    outline: none;
+    border-radius: 2vh;
+    font-family: 'Clash Display', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.5vh;
+    letter-spacing: 0.1vh;
+    text-align: center;
+    cursor: url('pointer.svg'),auto;
+    box-shadow: 1.6vh 1.6vh 0 #1A171D;
+  }
+  #notifyme:active{
+    box-shadow: 0 0 0 #1A171D;
+    margin: 1.6vh 0 0 1.6vh;
+  }
+  
+  #heropixelart{
+    position: absolute;
+    width: 100vw;
+    top: 84vh;
+    text-align: center;
+  }
+  #carousel{
+    width: 100vw;
+    height: 27vw;
+  }
+
+  #howitworks{
+    position: absolute;
+    width: 140vh;
+    left: 10vh;
+    top: calc(108vh + 27vw);
+  }
+  #howitworksheader{
+    font-family: 'Clash Display', sans-serif;
+    font-size: 5vh;
+    font-weight: 900;
+    color: #1A171D;
+    width: 80vh;
+    margin: 6vh auto 0;
+    text-align: center;
+  }
+
+  .pointheader{
+    font-family: 'Clash Display', sans-serif;
+    font-size: 5vh;
+    font-weight: 900;
+    color: #1A171D;
+    text-align: left;
+    margin: 0;
+  }
+  .pointsubheader{
+    font-family: 'Clash Display', sans-serif;
+    font-size: 2vh;
+    font-weight: 400;
+    color: #1A171D;
+    margin: 2vh 0 0;
+    text-align: left;
+  }
+  #point1{
+    width: 100%;
+    display: flex;
+    margin: 8vh 0 0 0;
+  }
+  #point1text{
+    position: relative;
+    vertical-align: middle;
+    width: 44vh;
+    height: 60vh;
+    margin-left: 8vh;
+  }
+  #p1text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #point1ill{
+    position: relative;
+    vertical-align: middle;
+    width: 60vh;
+    height: 60vh;
+    margin-left: 20vh;
+  }
+  #p1ill{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #p1image{
+    width: 60vh;
+    height: 60vh;
+  }
+
+  #point2{
+    width: 100%;
+    display: flex;
+    margin: 0;
+  }
+  #point2text{
+    position: relative;
+    vertical-align: middle;
+    width: 44vh;
+    height: 60vh;
+    margin-left: 84vh;
+  }
+  #p2text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #point2ill{
+    position: relative;
+    vertical-align: middle;
+    width: 60vh;
+    height: 60vh;
+    margin-left: -128vh;
+  }
+  #p2ill{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #p2image{
+    width: 60vh;
+    height: 60vh;
+  }
+
+  #point3{
+    width: 100%;
+    display: flex;
+    margin: 0;
+  }
+  #point3text{
+    position: relative;
+    vertical-align: middle;
+    width: 44vh;
+    height: 60vh;
+    margin-left: 8vh;
+  }
+  #p3text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #point3ill{
+    position: relative;
+    vertical-align: middle;
+    width: 60vh;
+    height: 60vh;
+    margin-left: 20vh;
+  }
+  #p3ill{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #p3image{
+    width: 60vh;
+    height: 60vh;
+  }
+
+  #footer{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: calc(104vh + 27vw + 216vh);
+  }
+  #footerheader{
+    font-family: 'Clash Display', sans-serif;
+    font-size: 5vh;
+    font-weight: 900;
+    color: #1A171D;
+    width: 80vh;
+    margin: 6vh auto 0;
+    text-align: center;
+  }
+  #footerctas{
+    position: relative;
+    width: 86vh;
+    height: 8vh;
+    margin: 12vh auto 0;
+    text-align: center;
+  }
+  #email2{
+    position: absolute;
+    width: 48vh;
+    height: 8vh;
+    left: 0;
+    top: 0;
+    font-family: 'Clash Display', sans-serif;
+    font-size: 2.5vh;
+    font-weight: 600;
+    padding-left: 2vh;
+    color: #1A171D;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border: 0.4vh solid;
+    border-color: #1A171D;
+    border-radius: 2vh;
+    outline: none;
+    box-shadow: 1.6vh 1.6vh 0 #1A171D;
+  }
+  #email2::placeholder{
+    color: #1A171D33;
+    font-weight: 500;
+  }
+  #notifyme2{
+    position: absolute;
+    width: 32vh;
+    height: 8vh;
+    left: 52vh;
+    top: 0;
+    background: linear-gradient(90deg, #2638ff 0%, #ff3848 100%);
+    color: #FFFFFF;
+    border: 0.5vh solid #1A171D;
+    outline: none;
+    border-radius: 2vh;
+    font-family: 'Clash Display', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.5vh;
+    letter-spacing: 0.1vh;
+    text-align: center;
+    cursor: url('pointer.svg'),auto;
+    box-shadow: 1.6vh 1.6vh 0 #1A171D;
+  }
+  #notifyme2:active{
+    box-shadow: 0 0 0 #1A171D;
+    margin: 1.6vh 0 0 1.6vh;
+  }
+
+  #icons{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 24vh auto 0;
+    padding-bottom: 8vh;
+ }
