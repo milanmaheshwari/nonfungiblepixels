@@ -375,7 +375,7 @@
         width: 14vh;
         height: 4vh;
         left: 5vw;
-        top: 20vh;
+        top: 16vh;
         background: #1A171D;
         color: #FFFFFF;
         outline: none;
@@ -393,7 +393,7 @@
     
       #herosection{
         width: 100%;
-        margin: 28vh auto 0;
+        margin: 24vh auto 0;
       }
       #heroheader{
         font-family: 'Clash Display', sans-serif;
@@ -480,13 +480,15 @@
       }
       
       #heropixelart{
-        width: 100vw;
-        margin: 24vh 0 0 -56vw;
+        width: 110vw;
+        margin: 28vh 0 0 -10vw;
         text-align: center;
+        overflow: hidden;
       }
       #carousel{
         width: 200vw;
         height: 54vw;
+        margin: 0 0 0 -44vw;
       }
     
       #howitworks{
