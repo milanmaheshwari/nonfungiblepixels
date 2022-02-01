@@ -19,9 +19,6 @@
 <g filter="url(#filter4_f_332_33)">
 <circle cx="1516" cy="1842" r="330" fill="#B8E1FF"/>
 </g>
-<g filter="url(#filter5_f_332_33)">
-<rect x="2250.08" y="3797.16" width="1470.14" height="1039.99" transform="rotate(148.335 2250.08 3797.16)" fill="url(#pattern4)" fill-opacity="0.6"/>
-</g>
 </g>
 <defs>
 <filter id="filter0_f_332_33" x="449" y="-1038.4" width="2381.98" height="2529.71" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -61,14 +58,6 @@
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_332_33"/>
 </filter>
-<filter id="filter5_f_332_33" x="52.853" y="2512" width="2597.23" height="2456.93" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_332_33"/>
-</filter>
-<pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image2_332_33" transform="scale(0.000602047 0.000851064)"/>
-</pattern>
 <clipPath id="clip0_332_33">
 <rect width="1440" height="3586" fill="white"/>
 </clipPath>
