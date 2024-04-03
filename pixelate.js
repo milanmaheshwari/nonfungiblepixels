@@ -581,14 +581,9 @@ modalcross.onclick = () => {
   document.getElementById('flexcontainer').style.overflowY = "";
 }
 
-//const serverUrl = "https://xr5ctimypvdb.usemoralis.com:2053/server";
-//const appId = "bWhkMUsRqSQDvD7pxi41zuPTbpqTNz4l4JZJt2ns";
-//Moralis.start({ serverUrl, appId });
-
-const apiKey = "ShdO6f3UbuxPMP0hcYIE1wyQIsFpsHAHJ1xLkTDs6d88aKTJ68KMx8rz5kEg1QpZ"
-Moralis.start({
-  apiKey: apiKey,
-});
+const serverUrl = "https://xr5ctimypvdb.usemoralis.com:2053/server";
+const appId = "bWhkMUsRqSQDvD7pxi41zuPTbpqTNz4l4JZJt2ns";
+Moralis.start({ serverUrl, appId });
 
 /*Moralis.initialize("66gAbHfrnRHkjofXJwjAy4QNbj1TmSbC5cEFQq5e");
 Moralis.serverURL = "https://qhv3d9jdemwl.usemoralis.com:2053/server";*/
