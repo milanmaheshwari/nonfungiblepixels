@@ -790,7 +790,9 @@ async function mint(){
     console.log('web3 is enabled');
     if(web3.currentProvider !== null){
       if (web3.currentProvider.isMetaMask === true) {
-        await getNetworkmint();
+        const response = Moralis.Auth.verify({});
+        console.log(response.raw);
+        //await getNetworkmint();
       } else {
         console.log('MetaMask is not available');
         installmetamask.style.display = "block";
