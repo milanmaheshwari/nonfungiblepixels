@@ -581,9 +581,15 @@ modalcross.onclick = () => {
   document.getElementById('flexcontainer').style.overflowY = "";
 }
 
-const serverUrl = "https://xr5ctimypvdb.usemoralis.com:2053/server";
+/*const serverUrl = "https://xr5ctimypvdb.usemoralis.com:2053/server";
 const appId = "bWhkMUsRqSQDvD7pxi41zuPTbpqTNz4l4JZJt2ns";
-Moralis.start({ serverUrl, appId });
+Moralis.start({ serverUrl, appId });*/
+
+const apikey = "ShdO6f3UbuxPMP0hcYIE1wyQIsFpsHAHJ1xLkTDs6d88aKTJ68KMx8rz5kEg1QpZ";
+
+Moralis.start({
+  apiKey: "apikey",
+});
 
 /*Moralis.initialize("66gAbHfrnRHkjofXJwjAy4QNbj1TmSbC5cEFQq5e");
 Moralis.serverURL = "https://qhv3d9jdemwl.usemoralis.com:2053/server";*/
