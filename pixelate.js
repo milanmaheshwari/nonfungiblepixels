@@ -635,7 +635,7 @@ async function getNetworkmint(){
     connectwallet.style.display = "block";
     loader.style.display = "block";
 
-    Moralis.Web3.authenticate({ signingMessage: "Non Fungible Pixels Authentication" }).then(
+    Moralis.authenticate({ signingMessage: "Non Fungible Pixels Authentication" }).then(
       async function (user){
         console.log(user);
         connectwallet.style.display = "none";
