@@ -581,28 +581,12 @@ modalcross.onclick = () => {
   document.getElementById('flexcontainer').style.overflowY = "";
 }
 
-const express = require("express");
-const Moralis = require("moralis").default;
-const { EvmChain } = require("@moralisweb3/common-evm-utils");
-
-const app = express();
-const MORALIS_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6ImNmNWM4NjI0LTIyZjctNDg0NS1iYTM3LTgzOGRiYzY4ZjczZiIsIm9yZ0lkIjoiMTEyMDI2IiwidXNlcklkIjoiMTExNjcyIiwidHlwZUlkIjoiZGU3MzI0YzQtOTZjZS00Y2RkLTgzMTMtMmM5M2YwYWMwM2UzIiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE3MTIxNzk5NjgsImV4cCI6NDg2NzkzOTk2OH0.67dsxPgRCxCNdKfx_F16BBXp1Gz_3A1gCnnYhINCrQM";
-
-const startServer = async () => {
-  await Moralis.start({
-    apiKey: MORALIS_API_KEY,
-  });
-};
-
-startServer();
-
-/*const serverUrl = "https://xr5ctimypvdb.usemoralis.com:2053/server";
+const serverUrl = "https://xr5ctimypvdb.usemoralis.com:2053/server";
 const appId = "bWhkMUsRqSQDvD7pxi41zuPTbpqTNz4l4JZJt2ns";
-Moralis.start({ serverUrl, appId });*/
+Moralis.start({ serverUrl, appId });
 
 /*Moralis.initialize("66gAbHfrnRHkjofXJwjAy4QNbj1TmSbC5cEFQq5e");
 Moralis.serverURL = "https://qhv3d9jdemwl.usemoralis.com:2053/server";*/
-
 
 const nft_contract_address = "0x434ab39fd72cc9f2a452920f4ca358e334d7839a" //NFT Minting Contract Use This One "Batteries Included", code of this contract is in the github repository under contract_base for your reference.
 /*
