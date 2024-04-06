@@ -635,7 +635,8 @@ async function getNetworkmint(){
     connectwallet.style.display = "block";
     loader.style.display = "block";
 
-    Moralis.authenticate().then(async function (user){
+    Moralis.Web3.authenticate({ signingMessage: "Non Fungible Pixels Authentication" }).then(
+      async function (user){
         console.log(user);
         connectwallet.style.display = "none";
         approvemint.style.display = "block";
@@ -643,25 +644,22 @@ async function getNetworkmint(){
   
         const base64url = uploadcanvas.toDataURL();
         const imageFile = new Moralis.File(filename, { base64: base64url });
-        await imageFile.save();
+        await imageFile.saveIPFS();
         const imageURI = imageFile.ipfs();
         console.log(imageURI);
-
         const metadata = {
           "name":document.getElementById("name").value,
           "description":document.getElementById("description").value,
           "image":imageURI
         }
         const metadataFile = new Moralis.File("metadata.json", {base64 : btoa(JSON.stringify(metadata))});
-        await metadataFile.save();
+        await metadataFile.saveIPFS();
         const metadataURI = metadataFile.ipfs();
         console.log(metadataURI);
 
         const txt = await mintToken(metadataURI).then(
-          (result) => {
-            notify();
-          },
-          (error) => {
+          notify,
+          (onRejected) => {
             document.getElementById('approvemintsubheading').innerHTML = "Something went wrong while minting! Don't worry, your artwork is still intact."
             document.getElementById('approvemintsubheading').style.color = "#FF1818";
             document.getElementById('approvemintsubheading').style.fontWeight = "500";
@@ -671,7 +669,8 @@ async function getNetworkmint(){
             startover.style.display = "block";
           }
         );
-    }).catch((error) => {
+    }, 
+    (onRejected) => {
       document.getElementById('connectwalletsubheading').innerHTML = "Sign in request was cancelled. Please retry to continue minting your NFT."
       document.getElementById('connectwalletsubheading').style.color = "#FF1818";
       document.getElementById('connectwalletsubheading').style.fontWeight = "500";
@@ -679,7 +678,8 @@ async function getNetworkmint(){
       document.getElementById('connectwalletill').style.display = "none";
       retrymint.style.display = "block";
       startover.style.display = "block";
-    });
+    }
+  );
 
   }
 }
